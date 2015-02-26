@@ -28,6 +28,9 @@ background-color: #0064a2;
 
 }
 
+.dropdown-toggle{
+color: red; 	
+}
 
 .row1:before,
 .row1:after{
