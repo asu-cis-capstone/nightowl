@@ -5,7 +5,11 @@ current release: v0.3
 
 ##Overview
 
-Couche-Board is a lightweight graphic user interface that allows users to view data analytics on a real time basis. The dashboard provides an easy to navigate frontend that allows users to look at broad figures, or to drill-down and see specific metrics. 
+Couche-Board is a browser-based GUI dashboard that will allow Couche-Tard management to view company metrics.
+
+##Quick Use
+
+Visit [https://couche-board.herokuapp.com](https:couche-board.herokuapp.com) to see our official running version of Couche-Board.
 
 ##Authors
 
