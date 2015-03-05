@@ -17,7 +17,8 @@ group :development, :test do
   gem 'spring',      '1.3.3'
 end
 
-# group :production do
+group :production do
 #   gem 'passenger'
-#   gem 'pg'
-# end
+  gem 'pg',      '0.18.1'
+  gem 'rails_12factor', '0.0.2'
+end
