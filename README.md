@@ -7,9 +7,9 @@ current release: v0.3
 
 Couche-Board is a browser-based GUI dashboard that will allow Couche-Tard management to view company metrics.
 
-##Quick Use
+##Official Site
 
-Visit [https://couche-board.herokuapp.com](https:couche-board.herokuapp.com) to see our official running version of Couche-Board.
+Visit [https://couche-board.herokuapp.com](https://couche-board.herokuapp.com) to use our version of the Couche-Board application.
 
 ##Authors
 
