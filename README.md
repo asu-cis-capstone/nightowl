@@ -27,16 +27,24 @@ Here is list of instructions to get started with Cloud9:
 
 1. Sign up for an account at [c9.io](https://c9.io/)
 2. Go to your dashboard
-3. Click the "Create New Workspace" button in the top left and select "Create a New Workspace"
+3. Click the "Create New Workspace" button in the top left and select "Clone From URL"
 4. In the dialog box that appears:
- * Name your workspace whatever you want it to be (e.g. couche-board)
- * Select the "Custom" Icon, which is a picture of an apple
+ * Enter https://github.com/asu-cis-capstone/nightowl into the Source URL field
  * Leave every other field as-is
  * Click "Create"
 5. Wait for Cloud9 to provision your new workspace
 6. Select your workspace from the left-hand navigation
 7. Click "START EDITING"
+8. Switch to the new tab where your workspace is loaded
    
+Before you start to work with our rails applciation, make sure to run the following command in the terminal:
+```
+$ bundle install
+```
+This will install the dependencies that our project rely on.
+
+On that note, you are good to go!
+
 ##Database Setup
 
 
