@@ -10,9 +10,9 @@ gem 'jquery-rails',             '4.0.3'
 gem 'turbolinks',               '2.5.3'
 gem 'jbuilder',                 '2.2.9'
 gem 'sdoc',                     '0.4.1', group: :doc
+gem 'pg'
 
 group :development, :test do
-  gem 'sqlite3',     '1.3.10'
   gem 'byebug',      '3.5.1'
   gem 'web-console', '2.1.1'
   gem 'spring',      '1.3.3'
@@ -20,6 +20,5 @@ end
 
 group :production do
   gem 'passenger'
-  gem 'pg',               '0.18.1'
   gem 'rails_12factor',   '0.0.2'
 end

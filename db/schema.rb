@@ -11,14 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140707111715) do
+ActiveRecord::Schema.define(version: 20150310200712) do
 
-  create_table "widgets", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.integer  "stock"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "employees_tables", force: :cascade do |t|
+    t.string "name"
   end
 
 end
