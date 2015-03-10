@@ -16,8 +16,8 @@ Visit [couche-board.herokuapp.com](https://couche-board.herokuapp.com) to use ou
 * **Phusion Passenger**
 * **PostgreSQL**
 * **Ruby**
-* **Rails** for the web development framework
-* **Bootstrap** for the design
+* **Rails**
+* **Bootstrap**
  
 ##Development Environment
 
@@ -117,7 +117,36 @@ $ psql --list
 $ psql postgres
 ```
 
+To create the databases for Couche-Board, run the following commands:
+```
+# If you are not within the rails root directory for our project, navigate there
+$ cd /home/ubuntu/workspace
 
+# This will create all the databases listed in the config/database.yml file
+$ bundle exec rake db:create:all
+```
+
+Now the databases should be installed in your local environment
+```
+# List available databases in your local environment
+$ psql --list
+```
+
+You should see coucheboard_development and coucheboard_test as list items in the output table
+
+Interact with any of your databases by running any of the example commands here:
+```
+# Use psql to launch the database
+$ psql coucheboard_development
+
+# Use rails to launch the database
+$ rails db
+```
+
+That's it for setting up the databases for now. 
+
+*Upcoming*
+Populating the database
 
 ##Authors
 
