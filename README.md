@@ -67,11 +67,13 @@ $ sudo apt-get update
 $ sudo apt-get install postgresql-9.4
 ```
 
+
 At this point, you want to update your PATH to include the PostgreSQL /bin folder
 ```
 $ echo "export PATH=/usr/lib/postgresql/9.4/bin:$PATH" >> ~/.bashrc
 $ source ~/.bashrc
 ```
+
 
 For good measure, verify that you are using the new install by running the following command:
 ```
@@ -79,9 +81,43 @@ For good measure, verify that you are using the new install by running the follo
 $ which psql
 ```
 
+
 Congrats! You have the correct version of PostgreSQL installed in your Cloud9 workspace.
 
 ###Configuration
+
+PostgreSQL is installed, but there are no databases yet or space for the databases to reside. In PostgreSQL, databases reside within a database cluster. First, we need to create a directory to house the database cluster.
+
+```
+$ sudo mkdir /usr/local/var
+$ sudo mkdir /usr/local/var/postgres
+$ sudo chown -R ubuntu /usr/local/var/postgres
+```
+
+Now initialize the database cluster.
+```
+$ initdb /usr/local/var/postgres
+```
+
+PostgreSQL uses the client/server model as its architecture. For that reason, we need to start the database server.
+```
+# Take ownership of directory where the server process will reside
+$ sudo chown -R ubuntu /var/run/postgresql
+
+# Start the server process
+$ pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+```
+
+Everything should be working now. Test it:
+```
+# List the databases
+$ psql --list
+
+# Enter the database (postgres is usually the default initial database)
+$ psql postgres
+```
+
+
 
 ##Authors
 
