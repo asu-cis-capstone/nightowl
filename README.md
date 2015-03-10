@@ -23,7 +23,8 @@ Visit [couche-board.herokuapp.com](https://couche-board.herokuapp.com) to use ou
 
 For the sake of a consistent environment, we recommend that you use the browser-based IDE, [Cloud9](https://c9.io/), as your development environment.
 
-Here is list of instructions to get started with Cloud9:  
+Here is list of instructions to get started with Cloud9:
+
 1. Sign up for an account at [c9.io](https://c9.io/)
 2. Go to your dashboard
 3. Click the "Create New Workspace" button in the top left and select "Create a New Workspace"
