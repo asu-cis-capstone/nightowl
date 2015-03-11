@@ -47,9 +47,69 @@ On that note, you are good to go!
 
 ##Database Setup
 
-[Cloud9](https://c9.io/) comes preinstalled with PostgreSQL, but the commands are idiosyncratic and the install is not fully-featured, so we recommend a fresh install instead.
+###Using the preinstalled PostgreSQL on Cloud9
 
-###Installation
+Cloud9 comes preinstalled with PostgreSQL. It's not necessary to install it, but we still have to configure it to work with Couch-Board.
+
+Start the database server:
+```
+$ sudo service postgresql start
+```
+
+You need to complete two configuration tasks in order to create the Couche-Board databases: 
+ 
+1. Create an "ubuntu" role
+2. Change the default encoding scheme to UTF8
+ 
+The steps to accomplish them will follow in a bit, but first start up the client Postgres interactive prompt in the terminal:
+
+```
+$ sudo sudo -u postgres psql
+
+# Below is what you should see after the command
+postgres=#
+```
+ 
+We will accomplish the tasks by inputting some SQL statements. Now, for accomplishing the tasks:
+
+1. Create an "ubuntu" role 
+
+Enter the following SQL statement:
+```
+CREATE ROLE ubuntu CREATEDB LOGIN;
+```
+Done.
+
+2. Change the default encoding scheme to UTF8
+ 
+Enter the following SQL statements:
+```
+UPDATE pg_database SET datistemplate = FALSE WHERE datname = 'template1';
+
+DROP DATABASE template1;
+
+CREATE DATABASE template1 WITH TEMPLATE = template0 ENCODING = 'UNICODE';
+
+UPDATE pg_database SET datistemplate = TRUE WHERE datname = 'template1';
+
+# Below is a Postgres meta command
+\c template1
+
+VACUUM FREEZE;
+```
+
+Done.
+
+Now you can create the Couche-Board databases. Run the following command:
+```
+$ bundle exec rake db:create:all
+```
+
+###Using a fresh install of PostgreSQL on Cloud9
+
+There seem to be some limitations of the preinstalled PostgreSQL version on Cloud9. One notable limitation is the absence of the *initdb* utility program that allows us to create space for our database cluster to reside.
+
+####Installation
 
 Here are the setup instructions for a fresh install of PostgreSQL on Cloud9:
 
