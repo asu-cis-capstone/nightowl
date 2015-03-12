@@ -110,6 +110,8 @@ Populating the database
 * [Jordan Parra](https:github.com/Jordan-Parra)  
 * [Rachel Vaney](https:github.com/theroguemuppet)
 
+##Videos
+https://www.youtube.com/watch?v=_DsjgyGgHZA
 
 ##Thanks
 
