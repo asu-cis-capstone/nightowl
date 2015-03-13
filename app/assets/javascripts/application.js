@@ -12,6 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
 //= require turbolinks
+//= require bootstrap-sprockets
+//= require metisMenu
+//= require raphael
+//= require morris
+//= require sb-admin-2
 //= require_tree .
