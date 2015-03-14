@@ -105,10 +105,10 @@ Populating the database
 
 ##Authors
 
-* [Patrick Morong](https:github.com/pmorong)  
-* [Vincent Nguyen](https:github.com/vietcent)  
-* [Jordan Parra](https:github.com/Jordan-Parra)  
-* [Rachel Vaney](https:github.com/theroguemuppet)
+* [Patrick Morong](https://github.com/pmorong)  
+* [Vincent Nguyen](https://github.com/vietcent)  
+* [Jordan Parra](https://github.com/Jordan-Parra)  
+* [Rachel Vaney](https://ithub.com/theroguemuppet)
 
 
 ##Thanks
