@@ -14,6 +14,7 @@ gem 'turbolinks',               '~> 2.5.3'
 gem 'jbuilder',                 '~> 2.2.11'
 gem 'sdoc',                     '~> 0.4.1', group: :doc
 gem 'pg',                       '~> 0.18.1'
+gem 'high_voltage',             '~> 2.2.1'
 
 group :development, :test do
   gem 'byebug',       '~> 4.0.1'
