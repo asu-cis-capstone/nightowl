@@ -7,4 +7,16 @@ var catovdata = [{ data:mglcat, label:"Midwest & Great Lakes", lines:{show:true}
 		,{ data:maincat, label:"Tempe Maintenance", lines:{show:true}, points:{show:true}}
 		];
 
-$(document).ready(function () {$.plot($("#catovline"), catovdata);});	 
+var options = {
+
+	xaxis: {
+		 ticks: [[1, "Quarter 1"], [2, "Quarter 2"], [3, "Quarter 3"], [4, "Quarter 4"]],
+		 axisLabel: 'foo',
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 20,
+            axisLabelFontFamily: 'Arial'
+		}
+	
+}
+		
+$(document).ready(function () {$.plot($("#catovline"), catovdata, options);});	 
