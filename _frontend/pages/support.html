@@ -9,7 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Couche-Tard Data Dashboard</title>
+    
+    <link rel=icon href=../images/owlyowl.ico sizes="16x16">
 
 	<!--[if lte IE 8]><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/excanvas.js"></script><![endif]-->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
@@ -20,7 +22,6 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-json/2.5.1/jquery.json.min.js"></script>
 	<script type='text/javascript' src="../data/flotaxisplugin.js"></script>
 	<script type='text/javascript' src="../data/jquery.flot.tooltip.js"></script>
-
 	
 	<script type="text/javascript" src="../data/try.js"></script>
 	<script type="text/javascript" src="../data/try2.js"></script>
@@ -62,7 +63,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Coucheboard</a>
+                <a class="navbar-brand" href="index.html">Couche-Board</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -395,10 +396,9 @@
                             <div class="tab-content">
                                 <div class="tab-pane fade in active" id="catovlinechart">
 									<div id="catovline" style="width:100%;height:300px"></div>
-                                   </div>
+                                </div>
                                 <div class="tab-pane fade" id="ahtovlinechart">
                                     <h4>Profile Tab</h4>
-									
 									<div id="ahtovline" style="width: 100%; height: 300px;"></div>
                                     </div>
                                 <div class="tab-pane fade" id="pspovlinechart">
@@ -455,38 +455,79 @@
 				<div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Tempe
+                            Midwest & Great Lakes
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <!-- Nav tabs -->
                             <ul class="nav nav-pills">
-                                <li class="active"><a href="#home-pills" data-toggle="tab">Home</a>
+                                <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
                                 </li>
-                                <li><a href="#profile-pills" data-toggle="tab">Profile</a>
+                                <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
                                 </li>
-                                <li><a href="#messages-pills" data-toggle="tab">Messages</a>
+                                <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
                                 </li>
-                                <li><a href="#settings-pills" data-toggle="tab">Settings</a>
-                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                </li> -->
                             </ul>
 
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div class="tab-pane fade in active" id="tempe">
+                                <div class="tab-pane fade in active" id="mwglcat-pills">
                                     <h4>Home Tab</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="tab-pane fade" id="profile-pills">
+									<div id="midWestPie" style="width:100%;height:300px"></div>
+                                   </div>
+                                <div class="tab-pane fade" id="mwglaht-pills">
                                     <h4>Profile Tab</h4>
+									
+									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                <div class="tab-pane fade" id="mwg-pills">
+                                    <h4>Calls PSP</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 </div>
-                                <div class="tab-pane fade" id="messages-pills">
-                                    <h4>Messages Tab</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="tab-pane fade" id="settings-pills">
-                                    <h4>Settings Tab</h4>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            
+        </div>
+        
+        <div class="row">
+			<div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Midwest & Great Lakes
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                </li> -->
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="mwglcat-pills">
+                                    <h4>Home Tab</h4>
+									<div id="midWestPie" style="width:100%;height:300px"></div>
+                                   </div>
+                                <div class="tab-pane fade" id="mwglaht-pills">
+                                    <h4>Profile Tab</h4>
+									
+									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                <div class="tab-pane fade" id="mwg-pills">
+                                    <h4>Calls PSP</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 </div>
                             </div>
@@ -496,9 +537,315 @@
                     <!-- /.panel -->
                 </div>
                 <!-- /.col-lg-6 -->
-				</div>
+				<div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Midwest & Great Lakes
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                </li> -->
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="mwglcat-pills">
+                                    <h4>Home Tab</h4>
+									<div id="midWestPie" style="width:100%;height:300px"></div>
+                                   </div>
+                                <div class="tab-pane fade" id="mwglaht-pills">
+                                    <h4>Profile Tab</h4>
+									
+									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                <div class="tab-pane fade" id="mwg-pills">
+                                    <h4>Calls PSP</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    
+                </div>
+                
+                
+            
         </div>
         <!-- /#page-wrapper -->
+        <div class="row">
+			<div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Midwest & Great Lakes
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                </li> -->
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="mwglcat-pills">
+                                    <h4>Home Tab</h4>
+									<div id="midWestPie" style="width:100%;height:300px"></div>
+                                   </div>
+                                <div class="tab-pane fade" id="mwglaht-pills">
+                                    <h4>Profile Tab</h4>
+									
+									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                <div class="tab-pane fade" id="mwg-pills">
+                                    <h4>Calls PSP</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
+				<div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Midwest & Great Lakes
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                </li> -->
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="mwglcat-pills">
+                                    <h4>Home Tab</h4>
+									<div id="midWestPie" style="width:100%;height:300px"></div>
+                                   </div>
+                                <div class="tab-pane fade" id="mwglaht-pills">
+                                    <h4>Profile Tab</h4>
+									
+									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                <div class="tab-pane fade" id="mwg-pills">
+                                    <h4>Calls PSP</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    
+                </div>
+                
+                
+            
+        </div>
+        
+        <div class="row">
+			<div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Midwest & Great Lakes
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                </li> -->
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="mwglcat-pills">
+                                    <h4>Home Tab</h4>
+									<div id="midWestPie" style="width:100%;height:300px"></div>
+                                   </div>
+                                <div class="tab-pane fade" id="mwglaht-pills">
+                                    <h4>Profile Tab</h4>
+									
+									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                <div class="tab-pane fade" id="mwg-pills">
+                                    <h4>Calls PSP</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
+				<div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Midwest & Great Lakes
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                </li> -->
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="mwglcat-pills">
+                                    <h4>Home Tab</h4>
+									<div id="midWestPie" style="width:100%;height:300px"></div>
+                                   </div>
+                                <div class="tab-pane fade" id="mwglaht-pills">
+                                    <h4>Profile Tab</h4>
+									
+									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                <div class="tab-pane fade" id="mwg-pills">
+                                    <h4>Calls PSP</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    
+                </div>
+                
+                
+            
+        </div>
+        
+        <div class="row">
+			<div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Midwest & Great Lakes
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                </li> -->
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="mwglcat-pills">
+                                    <h4>Home Tab</h4>
+									<div id="midWestPie" style="width:100%;height:300px"></div>
+                                   </div>
+                                <div class="tab-pane fade" id="mwglaht-pills">
+                                    <h4>Profile Tab</h4>
+									
+									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                <div class="tab-pane fade" id="mwg-pills">
+                                    <h4>Calls PSP</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
+				<div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Midwest & Great Lakes
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                </li> -->
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="mwglcat-pills">
+                                    <h4>Home Tab</h4>
+									<div id="midWestPie" style="width:100%;height:300px"></div>
+                                   </div>
+                                <div class="tab-pane fade" id="mwglaht-pills">
+                                    <h4>Profile Tab</h4>
+									
+									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                <div class="tab-pane fade" id="mwg-pills">
+                                    <h4>Calls PSP</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    
+                </div>
+                
+                
+            
+        </div>
 
     </div>
     <!-- /#wrapper -->
