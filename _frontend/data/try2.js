@@ -15,6 +15,10 @@ var options = {
             axisLabelUseCanvas: true,
             axisLabelFontSizePixels: 20,
             axisLabelFontFamily: 'Arial'
+		},
+		yaxis: {
+			axisLabel: '% answered in less than 3 min',
+			axisLabelUseCanvas: true
 		}
 	
 }
