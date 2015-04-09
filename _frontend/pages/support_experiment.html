@@ -23,7 +23,6 @@
 	<script type='text/javascript' src="../data/flotaxisplugin.js"></script>
 	<script type='text/javascript' src="../data/jquery.flot.tooltip.js"></script>
 	
-	<script type="text/javascript" src="../data/try.js"></script>
 	<script type="text/javascript" src="../data/try2.js"></script>
     
 	<!-- Bootstrap Core CSS -->
@@ -186,8 +185,7 @@
                 <!-- /.row -->
             
             <!-- /.container-fluid -->
-                
-                    <div class="panel panel-default">
+        <div class="panel panel-default">
                         <div class="panel-heading">
                             Overview
                         </div>
@@ -195,11 +193,13 @@
                         <div class="panel-body">
                             <!-- Nav tabs -->
                             <ul class="nav nav-pills">
-                                <li class="active"><a href="#catovlinechart" data-toggle="tab">Call Answer Time</a>
+                                <li class="active"><a href="#viewall0" data-toggle="tab">View All Metrics</a>
                                 </li>
-                                <li><a href="#ahtovlinechart" data-toggle="tab">Average Hold Time</a>
+                                <li><a href="#CAT_Overview" data-toggle="tab">Call Answer Time</a>
                                 </li>
-                                <li><a href="#pspovlinechart" data-toggle="tab">Calls PSP</a>
+                                <li><a href="#AHT_Overview" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li><a href="#PSP_Overview" data-toggle="tab">Calls PSP</a>
                                 </li>
                                 <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
                                 </li> -->
@@ -207,22 +207,27 @@
 
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div class="tab-pane fade in active" id="catovlinechart">
-									<div id="catovline" style="width:100%;height:300px"></div>
+                                 <div class="tab-pane fade" id="viewall0">
+                                     <div id="CAT_Overview_Graph2" style="width:100%;height:300px"></div>
+                                     <div id="AHT_Overview_Graph2" style="width: 100%; height: 300px;"></div>
+                                     <div id="PSP_Overview_Graph2" style="width: 100%; height: 300px;"></div>
+                                 </div>
+                                <div class="tab-pane fade in active" id="CAT_Overview">
+									<div id="CAT_Overview_Graph" style="width:100%;height:300px"></div>
                                 </div>
-                                <div class="tab-pane fade" id="ahtovlinechart">
-                                    <h4>Profile Tab</h4>
-									<div id="ahtovline" style="width: 100%; height: 300px;"></div>
+                                <div class="tab-pane fade in active" id="AHT_Overview">
+									<div id="AHT_Overview_Graph" style="width: 100%; height: 300px;"></div>
                                     </div>
-                                <div class="tab-pane fade" id="pspovlinechart">
-                                    <div id="pspovline" style="width: 100%; height: 300px;"></div>
+                                <div class="tab-pane fade in active" id="PSP_Overview">
+                                    <div id="PSP_Overview_Graph" style="width: 100%; height: 300px;"></div>
 								</div>
                             </div>
                         </div>
                         <!-- /.panel-body -->
                         
                     </div>
-                    <!-- /.panel -->
+                    <!-- /.panel -->       
+                    
 	
         
        
@@ -231,37 +236,48 @@
 			<div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Southwest Region
+                            Tempe Maintenance
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <!-- Nav tabs -->
                             <ul class="nav nav-pills">
+                                <li class="active"><a href="#viewall" data-toggle="tab">View All Metrics</a>
+                                </li>
+                                <li> <a href="#tempe_maintenance_CAT" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li> <a href="#tempe_maintenance_AHT" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li> <a href="#tempe_maintenance_PSP" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                
                                 <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
                                 </li>
                                 <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
                                 </li>
                                 <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
                                 </li>
-                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
                                 </li> -->
                             </ul>
 
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div class="tab-pane fade in active" id="mwglcat-pills">
-                                    <h4>Home Tab</h4>
-									<div id="midWestPie" style="width:100%;height:300px"></div>
-                                   </div>
-                                <div class="tab-pane fade" id="mwglaht-pills">
-                                    <h4>Profile Tab</h4>
-									
-									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
-                                    </div>
-                                <div class="tab-pane fade" id="mwg-pills">
-                                    <h4>Calls PSP</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                 <div class="tab-pane fade" id="viewall">
+                                     <div id="tempe_maintenance_CATGRAPH2" style="width:100%;height:300px"></div>
+                                     <div id="tempe_maintenance_AHTGRAPH2" style="width:100%;height:300px"></div>
+                                     <div id="tempe_maintenance_PSPGRAPH2" style="width: 100%; height: 300px;"></div>
+                                 </div>
+                                
+                                <div class="tab-pane fade in active" id="tempe_maintenance_CAT">
+									<div id="tempe_maintenance_CATGRAPH" style="width:100%;height:300px"></div>
                                 </div>
+                                <div class="tab-pane fade in active" id="tempe_maintenance_AHT">
+									<div id="tempe_maintenance_AHTGRAPH" style="width:100%;height:300px"></div>
+                                    </div>
+                                <div class="tab-pane fade in active" id="tempe_maintenance_PSP">
+                                    <div id="tempe_maintenance_PSPGRAPH" style="width: 100%; height: 300px;"></div>
+								</div>
                             </div>
                         </div>
                         <!-- /.panel-body -->
@@ -272,37 +288,157 @@
 				<div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Midwest Region
+                            Tempe EPOS
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <!-- Nav tabs -->
                             <ul class="nav nav-pills">
+                                <li class="active"><a href="#viewall2" data-toggle="tab">View All Metrics</a>
+                                </li>
+                                <li> <a href="#tempe_EPOS_CAT" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li> <a href="#tempe_EPOS_AHT" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li> <a href="#tempe_EPOS_PSP" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                
                                 <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
                                 </li>
                                 <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
                                 </li>
                                 <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
                                 </li>
-                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
                                 </li> -->
                             </ul>
 
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div class="tab-pane fade in active" id="mwglcat-pills">
-                                    <h4>Home Tab</h4>
-									<div id="midWestPie" style="width:100%;height:300px"></div>
-                                   </div>
-                                <div class="tab-pane fade" id="mwglaht-pills">
-                                    <h4>Profile Tab</h4>
-									
-									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
-                                    </div>
-                                <div class="tab-pane fade" id="mwg-pills">
-                                    <h4>Calls PSP</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                 <div class="tab-pane fade" id="viewall2">
+                                     <div id="tempe_EPOS_CATGRAPH2" style="width:100%;height:300px"></div>
+                                     <div id="tempe_EPOS_AHTGRAPH2" style="width:100%;height:300px"></div>
+                                     <div id="tempe_EPOS_PSPGRAPH2" style="width: 100%; height: 300px;"></div>
+                                 </div>
+                                
+                                <div class="tab-pane fade in active" id="tempe_EPOS_CAT">
+									<div id="tempe_EPOS_CATGRAPH" style="width:100%;height:300px"></div>
                                 </div>
+                                <div class="tab-pane fade in active" id="tempe_EPOS_AHT">
+									<div id="tempe_EPOS_AHTGRAPH" style="width:100%;height:300px"></div>
+                                    </div>
+                                <div class="tab-pane fade in active" id="tempe_EPOS_PSP">
+                                    <div id="tempe_EPOS_PSPGRAPH" style="width: 100%; height: 300px;"></div>
+								</div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                
+                
+            
+        </div>
+        
+        <div class="row">
+			<div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Columbus
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#viewall3" data-toggle="tab">View All Metrics</a>
+                                </li>
+                                <li> <a href="#columbus_CAT" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li> <a href="#columbus_AHT" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li> <a href="#columbus_PSP" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                
+                                <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                </li> -->
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                 <div class="tab-pane fade" id="viewall3">
+                                     <div id="columbus_CATGRAPH2" style="width:100%;height:300px"></div>
+                                     <div id="columbus_AHTGRAPH2" style="width:100%;height:300px"></div>
+                                     <div id="columbus_PSPGRAPH2" style="width: 100%; height: 300px;"></div>
+                                 </div>
+                                
+                                <div class="tab-pane fade in active" id="columbus_CAT">
+									<div id="columbus_CATGRAPH" style="width:100%;height:300px"></div>
+                                </div>
+                                <div class="tab-pane fade in active" id="columbus_AHT">
+									<div id="columbus_AHTGRAPH" style="width:100%;height:300px"></div>
+                                    </div>
+                                <div class="tab-pane fade in active" id="columbus_PSP">
+                                    <div id="columbus_PSPGRAPH" style="width: 100%; height: 300px;"></div>
+								</div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
+				<div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Sanford
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#viewall4" data-toggle="tab">View All Metrics</a>
+                                </li>
+                                <li> <a href="#sanford_CAT" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li> <a href="#sanford_AHT" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li> <a href="#sanford_PSP" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                
+                                <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                </li> -->
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                 <div class="tab-pane fade" id="viewall4">
+                                     <div id="sanford_CATGRAPH2" style="width:100%;height:300px"></div>
+                                     <div id="sanford_AHTGRAPH2" style="width:100%;height:300px"></div>
+                                     <div id="sanford_PSPGRAPH2" style="width: 100%; height: 300px;"></div>
+                                 </div>
+                                
+                                <div class="tab-pane fade in active" id="sanford_CAT">
+									<div id="sanford_CATGRAPH" style="width:100%;height:300px"></div>
+                                </div>
+                                <div class="tab-pane fade in active" id="sanford_AHT">
+									<div id="sanford_AHTGRAPH" style="width:100%;height:300px"></div>
+                                    </div>
+                                <div class="tab-pane fade in active" id="sanford_PSP">
+                                    <div id="sanford_PSPGRAPH" style="width: 100%; height: 300px;"></div>
+								</div>
                             </div>
                         </div>
                         <!-- /.panel-body -->
@@ -319,37 +455,48 @@
 			<div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Gulf Region
+                            Toronto
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <!-- Nav tabs -->
                             <ul class="nav nav-pills">
+                                <li class="active"><a href="#viewall5" data-toggle="tab">View All Metrics</a>
+                                </li>
+                                <li> <a href="#toronto_CAT" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li> <a href="#toronto_AHT" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li> <a href="#toronto_PSP" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                
                                 <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
                                 </li>
                                 <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
                                 </li>
                                 <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
                                 </li>
-                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
                                 </li> -->
                             </ul>
 
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div class="tab-pane fade in active" id="mwglcat-pills">
-                                    <h4>Home Tab</h4>
-									<div id="midWestPie" style="width:100%;height:300px"></div>
-                                   </div>
-                                <div class="tab-pane fade" id="mwglaht-pills">
-                                    <h4>Profile Tab</h4>
-									
-									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
-                                    </div>
-                                <div class="tab-pane fade" id="mwg-pills">
-                                    <h4>Calls PSP</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                 <div class="tab-pane fade" id="viewall5">
+                                     <div id="toronto_CATGRAPH2" style="width:100%;height:300px"></div>
+                                     <div id="toronto_AHTGRAPH2" style="width:100%;height:300px"></div>
+                                     <div id="toronto_PSPGRAPH2" style="width: 100%; height: 300px;"></div>
+                                 </div>
+                                
+                                <div class="tab-pane fade in active" id="toronto_CAT">
+									<div id="toronto_CATGRAPH" style="width:100%;height:300px"></div>
                                 </div>
+                                <div class="tab-pane fade in active" id="toronto_AHT">
+									<div id="toronto_AHTGRAPH" style="width:100%;height:300px"></div>
+                                    </div>
+                                <div class="tab-pane fade in active" id="toronto_PSP">
+                                    <div id="toronto_PSPGRAPH" style="width: 100%; height: 300px;"></div>
+								</div>
                             </div>
                         </div>
                         <!-- /.panel-body -->
@@ -360,125 +507,48 @@
 				<div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            South Atlantic Region
+                            Laval
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <!-- Nav tabs -->
                             <ul class="nav nav-pills">
+                                <li class="active"><a href="#viewall6" data-toggle="tab">View All Metrics</a>
+                                </li>
+                                <li> <a href="#laval_CAT" data-toggle="tab">Call Answer Time</a>
+                                </li>
+                                <li> <a href="#laval_AHT" data-toggle="tab">Average Hold Time</a>
+                                </li>
+                                <li> <a href="#laval_PSP" data-toggle="tab">Calls PSP</a>
+                                </li>
+                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                
                                 <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
                                 </li>
                                 <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
                                 </li>
                                 <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
                                 </li>
-                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
                                 </li> -->
                             </ul>
 
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div class="tab-pane fade in active" id="mwglcat-pills">
-                                    <h4>Home Tab</h4>
-									<div id="midWestPie" style="width:100%;height:300px"></div>
-                                   </div>
-                                <div class="tab-pane fade" id="mwglaht-pills">
-                                    <h4>Profile Tab</h4>
-									
-									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
-                                    </div>
-                                <div class="tab-pane fade" id="mwg-pills">
-                                    <h4>Calls PSP</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                 <div class="tab-pane fade" id="viewall6">
+                                     <div id="laval_CATGRAPH2" style="width:100%;height:300px"></div>
+                                     <div id="laval_AHTGRAPH2" style="width:100%;height:300px"></div>
+                                     <div id="laval_PSPGRAPH2" style="width: 100%; height: 300px;"></div>
+                                 </div>
+                                
+                                <div class="tab-pane fade in active" id="laval_CAT">
+									<div id="laval_CATGRAPH" style="width:100%;height:300px"></div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                    
-                </div>
-                
-                
-            
-        </div>
-        
-        <div class="row">
-			<div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Southeast Region
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-pills">
-                                <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
-                                </li>
-                                <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
-                                </li>
-                                <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
-                                </li>
-                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
-                                </li> -->
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane fade in active" id="mwglcat-pills">
-                                    <h4>Home Tab</h4>
-									<div id="midWestPie" style="width:100%;height:300px"></div>
-                                   </div>
-                                <div class="tab-pane fade" id="mwglaht-pills">
-                                    <h4>Profile Tab</h4>
-									
-									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
+                                <div class="tab-pane fade in active" id="laval_AHT">
+									<div id="laval_AHTGRAPH" style="width:100%;height:300px"></div>
                                     </div>
-                                <div class="tab-pane fade" id="mwg-pills">
-                                    <h4>Calls PSP</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-				<div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Florida Region
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-pills">
-                                <li class="active"><a href="#mwglcat-pills" data-toggle="tab">Call Answer Time</a>
-                                </li>
-                                <li><a href="#mwglaht-pills" data-toggle="tab">Average Hold Time</a>
-                                </li>
-                                <li><a href="#mwg-pills" data-toggle="tab">Calls PSP</a>
-                                </li>
-                                <!-- <li><a href="#settings-pills" data-toggle="tab">Settings</a>
-                                </li> -->
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane fade in active" id="mwglcat-pills">
-                                    <h4>Home Tab</h4>
-									<div id="midWestPie" style="width:100%;height:300px"></div>
-                                   </div>
-                                <div class="tab-pane fade" id="mwglaht-pills">
-                                    <h4>Profile Tab</h4>
-									
-									<div id="midWestHold" style="width: 100%; height: 300px;"></div>
-                                    </div>
-                                <div class="tab-pane fade" id="mwg-pills">
-                                    <h4>Calls PSP</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
+                                <div class="tab-pane fade in active" id="laval_PSP">
+                                    <div id="laval_PSPGRAPH" style="width: 100%; height: 300px;"></div>
+								</div>
                             </div>
                         </div>
                         <!-- /.panel-body -->
