@@ -126,6 +126,14 @@ $ bundle exec rake db:create:all
 *Upcoming*
 Populating the database
 
+##Test Execution
+
+To execute the tests within the test/ directory, simply run:
+
+```
+$ rake test
+```
+
 ##Authors
 
 * [Patrick Morong](https://github.com/pmorong)  
