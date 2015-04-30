@@ -98,8 +98,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                             x = plot.getPlotOffset().left + plot.width()/2 - width/2;
                             y = plot.getCanvas().height;
                         } else {
-                            x = height * 0.72;
-                            y = plot.getPlotOffset().top + plot.height()/.8 - width/2;
+                            x = height * 0.9;
+                            y = plot.getPlotOffset().top + plot.height()/.65 - width/2;
                         }
                         ctx.translate(x, y);
                         ctx.rotate((axisName.charAt(0) == 'x') ? 0 : -Math.PI/2);

@@ -183,12 +183,15 @@ var call_answer_time_options = {
 	xaxis: {
 		 ticks: [[1, "Week 1"], [2, "Week 2"], [3, "Week 3"], [4, "Week 4"], [5, "Week 5"], [6, "Week 6"], [7, "Week 7"], [8, "Week 8"]],
 		 axisLabel: '',
-            axisLabelUseCanvas: true,
+            axisLabelUseCanvas: false,
             axisLabelFontSizePixels: 20,
             axisLabelFontFamily: 'Arial'
 		},
 		yaxis: { min:50, max:100,
-		tickFormatter: function(val, axis) { return val < axis.max ? val.toFixed(2) : "Calls Answered in Less Than Five Minutes (%)";}
+		axisLabel: 'Calls Answered in Less Than Five Minutes (%)',
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 13,
+            axisLabelFontFamily: 'Arial'
 		},
 		grid: {
 			show: true,
@@ -392,8 +395,11 @@ var average_hold_time_options = {
             axisLabelFontSizePixels: 20,
             axisLabelFontFamily: 'Arial'
 		},
-		yaxis: { min:30, max:175,
-		tickFormatter: function(val, axis) { return val < axis.max ? val.toFixed(2) : "Average Hold Time (Seconds)                           ";}
+		yaxis: { min:10, max:175,
+		axisLabel: 'Average Hold Time (Seconds)                             ',
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 13,
+            axisLabelFontFamily: 'Arial'
 		},
 		grid: {
 			show: true,
@@ -441,8 +447,11 @@ var average_hold_time_options_main = {
             axisLabelFontSizePixels: 20,
             axisLabelFontFamily: 'Arial'
 		},
-			yaxis: { min:30, max:175,
-		tickFormatter: function(val, axis) { return val < axis.max ? val.toFixed(2) : "Average Hold Time (Seconds)                           ";}
+			yaxis: { min:30, max:170,
+		axisLabel: 'Average Hold Time (Seconds)',
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 13,
+            axisLabelFontFamily: 'Arial'
 		},
 		grid: {
 			show: true,
@@ -596,8 +605,11 @@ var psp_options = {
             axisLabelFontSizePixels: 20,
             axisLabelFontFamily: 'Arial'
 		},
-			yaxis: { min:0, max:10,
-		tickFormatter: function(val, axis) { return val < axis.max ? val.toFixed(2) : "Calls Per Store Period (#)                                  ";}
+				yaxis: { min:0, max:10,
+		axisLabel: 'Calls Per Store Period (#)                                  ',
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 13,
+            axisLabelFontFamily: 'Arial'
 		},
 		grid: {
 			show: true,
@@ -781,7 +793,10 @@ var WAN_options = {
             axisLabelFontFamily: 'Arial'
 		},
 			yaxis: { min:98, max:100,
-		tickFormatter: function(val, axis) { return val < axis.max ? val.toFixed(2) : "Calls Per Store Period (#)                                  ";}
+			axisLabel: 'Calls Per Store Period (#)',
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 13,
+            axisLabelFontFamily: 'Arial'
 		},
 		grid: {
 			show: true,
