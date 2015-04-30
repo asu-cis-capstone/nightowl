@@ -1,7 +1,7 @@
 #Couche-Board
 
 Couche-Tard Dashboard  
-current release: v0.3
+current release: v1.0
 
 ##Overview
 
@@ -11,6 +11,9 @@ Couche-Board is a browser-based GUI dashboard that will allow Couche-Tard manage
 
 Visit [couche-board.herokuapp.com](https://couche-board.herokuapp.com) to use our version of the Couche-Board application.
 
+##Trello
+
+https://trello.com/b/k3IplRah/440-group#
  
 ##Development Environment
 
