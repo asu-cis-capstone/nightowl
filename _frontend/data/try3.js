@@ -8,7 +8,6 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
 }
 
 //ScriptReader
-//Somewhere in this code we will piece together how to grab the goddamn values and paste them to the screen
 
 		                    window.onload = function() {
 		                    var fileInput = document.getElementById('fileInput');
@@ -38,55 +37,77 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
 										alert("Success! Dashboard loading...");
 				                    }
 				                    
-//All Data for Tempe Proper 
-var temLPAB = [[1, -2], [2, .3], [3, 1], [4, .75]];
-var temYDAB = [[1, -2], [2, .3], [3, 1], [4, .75]];
+//All Call Answer Time Data
+var maincat = [[1, myArray[0]], [2,myArray[1]], [3,myArray[2]], [4,myArray[3]]];
+var eposcat = [[1,myArray[4]], [2,myArray[5]], [3,myArray[6]], [4,myArray[7]]];
+var colcat = [[1,myArray[8]], [2,myArray[9]], [3,myArray[10]], [4,myArray[11]]];
+var sancat = [[1,myArray[12]], [2,myArray[13]], [3,myArray[14]], [4,myArray[15]]];
+var torcat = [[1,myArray[17]], [2,myArray[18]], [3,myArray[19]], [4,myArray[20]]];
+var lavcat = [[1,myArray[21]], [2,myArray[22]], [3,myArray[23]], [4,myArray[24]]];
 
-//Tempe/Col Data
-var temcol_WAN = [[1, 99.874],[2, 99.874],[3, 99.874],[4, 99.874],[5, 99.874],[6, 99.874],[7, 99.874],[8, 99.874]];
+//All Average Hold Time Data
+var mainaht = [[1,myArray[25]], [2,myArray[26]], [3,myArray[27]], [4,myArray[28]]];
+var eposaht = [[1,myArray[29]], [2,myArray[30]], [3,myArray[31]], [4,myArray[32]]];
+var colaht = [[1,myArray[33]], [2,myArray[34]], [3,myArray[35]], [4,myArray[36]]];
+var sanaht = [[1,myArray[37]], [2,myArray[38]], [3,myArray[39]], [4,myArray[40]]];
+var toraht = [[1,myArray[41]], [2,myArray[42]], [3,myArray[43]], [4,myArray[44]]];
+var lavaht = [[1,myArray[45]], [2,myArray[46]], [3,myArray[47]], [4,myArray[48]]];
 
-//All Data for Tempe Maintenance
-var maincat = [[myArray[0], myArray[1]], [myArray[2], myArray[3]], [myArray[4], myArray[5]], [myArray[6], myArray[7]]];
-var mainaht = [[myArray[8], myArray[9]], [myArray[10], myArray[11]], [myArray[12], myArray[13]], [myArray[14], myArray[15]]];
-var mainpsp = [[myArray[16], myArray[17]], [myArray[18], myArray[19]], [myArray[20], myArray[21]], [myArray[22], myArray[23]]];
+//All Calls PSP Data
+var mainpsp = [[1,myArray[49]], [2,myArray[50]], [3,myArray[51]], [4,myArray[52]]];
+var epospsp = [[1,myArray[53]], [2,myArray[54]], [3,myArray[55]], [4,myArray[56]]];
+var colpsp = [[1,myArray[57]], [2,myArray[58]], [3,myArray[59]], [4,myArray[60]]];
+var sanpsp = [[1,myArray[61]], [2,myArray[62]], [3,myArray[63]], [4,myArray[64]]];
+var torpsp = [[1,myArray[65]], [2,myArray[66]], [3,myArray[67]], [4,myArray[68]]];
+var lavpsp = [[1,myArray[69]], [2,myArray[70]], [3,myArray[71]], [4,myArray[72]]];
 
-//All Data for Tempe EPOS
-var eposcat = [[myArray[24], myArray[25]], [myArray[26], myArray[27]], [myArray[28], myArray[29]], [myArray[30], myArray[31]]];
-var eposaht = [[myArray[32], myArray[33]], [myArray[34], myArray[35]], [myArray[36], myArray[37]], [myArray[38], myArray[39]]];
-var epospsp = [[myArray[40], myArray[41]], [myArray[42], myArray[43]], [myArray[44], myArray[45]], [myArray[46], myArray[47]]];
+//All Last Period Against Budget Data
+var temLPAB = [[1,myArray[73]], [2,myArray[74]], [3,myArray[75]], [4,myArray[76]]];
+var colLPAB = [[1,myArray[77]], [2,myArray[78]], [3,myArray[79]], [4,myArray[80]]];
+var sanLPAB = [[1,myArray[81]], [2,myArray[82]], [3,myArray[83]], [4,myArray[84]]];
+var torLPAB = [[1,myArray[85]], [2,myArray[86]], [3,myArray[87]], [4,myArray[88]]];
+var lavLPAB = [[1,myArray[89]], [2,myArray[90]], [3,myArray[91]], [4,myArray[92]]];
 
-//All Data for Columbus
-var colcat = [[myArray[48], myArray[49]], [myArray[50], myArray[51]], [myArray[52], myArray[53]], [myArray[54], myArray[55]]];
-var colaht = [[myArray[56], myArray[57]], [myArray[58], myArray[59]], [myArray[60], myArray[61]], [myArray[62], myArray[63]]];
-var colpsp = [[myArray[64], myArray[65]], [myArray[66], myArray[67]], [myArray[68], myArray[69]], [myArray[70], myArray[71]]];
+//All Year to Date Against Budget Data 
+var temYDAB = [[1,myArray[93]], [2,myArray[94]], [3,myArray[95]], [4,myArray[96]]];
+var colYDAB = [[1,myArray[97]], [2,myArray[98]], [3,myArray[99]], [4,myArray[100]]];
+var sanYDAB = [[1,myArray[101]], [2,myArray[102]], [3,myArray[103]], [4,myArray[104]]];
+var torYDAB = [[1,myArray[105]], [2,myArray[106]], [3,myArray[107]], [4,myArray[108]]];
+var lavYDAB = [[1,myArray[109]], [2,myArray[110]], [3,myArray[111]], [4,myArray[112]]];
 
-var colLPAB = [[1, -2], [2, .3], [3, 1], [4, .75]];
-var colYDAB = [[1, -2], [2, .3], [3, 1], [4, .75]];
+//All Positions Filled Data
+var temPF = [[1,myArray[113]], [2,myArray[114]], [3,myArray[115]], [4,myArray[116]]];
+var colPF = [[1,myArray[117]], [2,myArray[118]], [3,myArray[119]], [4,myArray[120]]];
+var sanPF = [[1,myArray[121]], [2,myArray[122]], [3,myArray[123]], [4,myArray[124]]];
+var torPF = [[1,myArray[125]], [2,myArray[126]], [3,myArray[127]], [4,myArray[128]]];
+var lavPF = [[1,myArray[129]], [2,myArray[130]], [3,myArray[131]], [4,myArray[132]]];
 
-//All Data for Sanford
-var sancat = [[myArray[72], myArray[73]], [myArray[74], myArray[75]], [myArray[76], myArray[77]], [myArray[78], myArray[79]]];
-var sanaht = [[myArray[80], myArray[81]], [myArray[82], myArray[83]], [myArray[84], myArray[85]], [myArray[86], myArray[87]]];
-var sanpsp = [[myArray[88], myArray[89]], [myArray[90], myArray[91]], [myArray[92], myArray[93]], [myArray[94], myArray[95]]];
+//All Positions Open Data
+var temPO = [[1,myArray[133]], [2,myArray[134]], [3,myArray[135]], [4,myArray[136]]];
+var colPO = [[1,myArray[137]], [2,myArray[138]], [3,myArray[139]], [4,myArray[140]]];
+var sanPO = [[1,myArray[141]], [2,myArray[142]], [3,myArray[143]], [4,myArray[144]]];
+var torPO = [[1,myArray[145]], [2,myArray[146]], [3,myArray[147]], [4,myArray[148]]];
+var lavPO = [[1,myArray[149]], [2,myArray[150]], [3,myArray[151]], [4,myArray[152]]];
 
-var sanLPAB = [[1, -2], [2, .3], [3, 1], [4, .75]];
-var sanYDAB = [[1, -2], [2, .3], [3, 1], [4, .75]];
+//All Stores Deployed Last Week Data
+var temSDLW = [[1,myArray[153]], [2,myArray[154]], [3,myArray[155]], [4,myArray[156]]];
+var colSDLW = [[1,myArray[157]], [2,myArray[158]], [3,myArray[159]], [4,myArray[160]]];
+var sanSDLW = [[1,myArray[161]], [2,myArray[162]], [3,myArray[163]], [4,myArray[164]]];
+var torSDLW = [[1,myArray[165]], [2,myArray[166]], [3,myArray[167]], [4,myArray[168]]];
+var lavSDLW = [[1,myArray[169]], [2,myArray[170]], [3,myArray[171]], [4,myArray[172]]];
 
-//All Data for Toronto
-var torcat = [[myArray[96], myArray[97]], [myArray[98], myArray[99]], [myArray[100], myArray[101]], [myArray[102], myArray[103]]];
-var toraht = [[myArray[104], myArray[105]], [myArray[106], myArray[107]], [myArray[108], myArray[109]], [myArray[110], myArray[111]]];
-var torpsp = [[myArray[112], myArray[113]], [myArray[114], myArray[115]], [myArray[116], myArray[117]], [myArray[118], myArray[119]]];
+//All Stores Deployed This Week Data
+var temSDTW = [[1,myArray[173]], [2,myArray[174]], [3,myArray[175]], [4,myArray[176]]];
+var colSDTW = [[1,myArray[177]], [2,myArray[178]], [3,myArray[179]], [4,myArray[180]]];
+var sanSDTW = [[1,myArray[181]], [2,myArray[182]], [3,myArray[183]], [4,myArray[184]]];
+var torSDTW = [[1,myArray[185]], [2,myArray[186]], [3,myArray[187]], [4,myArray[188]]];
+var lavSDTW = [[1,myArray[189]], [2,myArray[190]], [3,myArray[191]], [4,myArray[192]]];
 
-var torLPAB = [[1, -2], [2, .3], [3, 1], [4, .75]];
-var torYDAB = [[1, -2], [2, .3], [3, 1], [4, .75]];
-
-
-//All Data for Laval
-var lavcat = [[myArray[120], myArray[121]], [myArray[122], myArray[123]], [myArray[124], myArray[125]], [myArray[126], myArray[127]]];
-var lavaht = [[myArray[128], myArray[129]], [myArray[130], myArray[131]], [myArray[132], myArray[133]], [myArray[134], myArray[135]]];
-var lavpsp = [[myArray[136], myArray[137]], [myArray[138], myArray[139]], [myArray[140], myArray[141]], [myArray[142], myArray[143]]];
-
-var lavLPAB = [[1, -2], [2, .3], [3, 1], [4, .75]];
-var lavYDAB = [[1, -2], [2, .3], [3, 1], [4, .75]];
+//All WAN Uptime Data
+var temcol_WAN = [[1, myArray[193]],[2, myArray[194]],[3, myArray[195]],[4, myArray[196]],[5, myArray[197]],[6, myArray[198]],[7, myArray[199]],[8, myArray[200]]];
+var san_WAN = [[1, myArray[201]],[2, myArray[202]],[3, myArray[203]],[4, myArray[204]],[5, myArray[205]],[6, myArray[206]],[7, myArray[207]],[8, myArray[208]]];
+var tor_WAN = [[1, myArray[209]],[2, myArray[210]],[3, myArray[211]],[4, myArray[212]],[5, myArray[213]],[6, myArray[214]],[7, myArray[215]],[8, myArray[217]]];
+var lav_WAN = [[1, myArray[218]],[2, myArray[219]],[3, myArray[220]],[4, myArray[221]],[5, myArray[222]],[6, myArray[223]],[7, myArray[224]],[8, myArray[225]]];
 
 
 //Calls Answer Time Overview Graph Data
