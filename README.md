@@ -14,6 +14,11 @@ Visit [couche-board.herokuapp.com](https://couche-board.herokuapp.com) to use ou
 ##Trello
 
 https://trello.com/b/k3IplRah/440-group#
+
+login information:
+
+email: rvaney@mail2world.com
+password: hmniaraih2ayaq
  
 ##Development Environment
 
